@@ -1,0 +1,13 @@
+.part-exercise{
+    border: 1px solid gray;
+   
+   
+}
+.part-exercise img{
+    height: 200px;
+    width: 300px;
+  
+}
+.write{
+    padding: 10px;
+}

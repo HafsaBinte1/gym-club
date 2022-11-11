@@ -1,21 +1,30 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import Exercise from '../Exercise/Exercise';
 import './Gym.css'
 const Gym = () => {
+    const [exercises, setExercise] = useState([]) 
     useEffect(() =>{
         fetch('fakeData.json')
         .then(res => res.json()
-        .then(data => console.log(data)))
+        .then(data => setExercise(data)))
     }, [])
     return (
-        <div>
-         <div className='exercise'>
+        <div className='gym-container'>
+         <div>
           <h1>Gym Club</h1>
           <h4>Select Today's Exercise </h4>
-         <div>
-
+          <div className='exercise'>
+          {
+            exercises.map(exercise => <Exercise
+            key = {exercise.id}
+            exercise = {exercise}>
+            </Exercise>)
+          }
          </div>
          </div>
-         <div className='cart'></div>
+         <div className='cart'>
+         <h1>This is cart</h1>
+         </div>
         </div>
     );
 };

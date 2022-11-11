@@ -1,0 +1,15 @@
+.gym-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    margin: 20px;
+}
+.exercise{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    width: 300px;
+}
+.cart{
+    background-color: wheat;
+    padding: 10px;
+}

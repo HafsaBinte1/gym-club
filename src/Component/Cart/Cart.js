@@ -11,11 +11,12 @@ const Cart = (props) => {
   }
   const timeBtn = (dosh) =>{
    setTen(dosh)
-   localStorage.setItem('breaktime', dosh)
+   localStorage.setItem('break-time', dosh)
   }
-//   useEffect(() =>{
-//     const getValue = 
-//   }, [])
+  useEffect(() =>{
+    const getValue = localStorage.getItem('break-time')
+    setTen(getValue)
+  }, [])
     return (
         <div className='cart'>
             <div className='profile'>

@@ -16,3 +16,16 @@
     background-color: wheat;
     padding: 10px;
 }
+
+
+
+@media only screen and (max-width: 950px) {
+    .gym-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+   .exercise{
+
+        grid-template-columns: 2fr 2fr;
+    }
+}

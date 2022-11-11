@@ -1,7 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Cart.css'
 import img from '../../img/indian-school-girl-happy-elementary-school-pupil-back-school_71593-1071.webp'
-const Cart = () => {
+const Cart = (props) => {
+  const {cart} = props
+  const [ten, setTen] = useState(0);
+  let time = 0;
+
+  for(const data of cart ){
+    time = time + data.time
+  }
+  const timeBtn = (dosh) =>{
+   setTen(dosh)
+   localStorage.setItem('breaktime', dosh)
+  }
+//   useEffect(() =>{
+//     const getValue = 
+//   }, [])
     return (
         <div className='cart'>
             <div className='profile'>
@@ -28,20 +42,20 @@ const Cart = () => {
           <div >
             <h4>Add a break</h4>
             <div className='break'>
-                <button className='break-time'>10s</button>
-                <button className='break-time'>20s</button>
-                <button className='break-time'>30s</button>
-                <button className='break-time'>40s</button>
-                <button className='break-time'>50s</button>
+                <button onClick={() => timeBtn(10)} className='break-time'>10s</button>
+                <button onClick={() => timeBtn(20)}  className='break-time'>20s</button>
+                <button onClick={() => timeBtn(30)}  className='break-time'>30s</button>
+                <button onClick={() => timeBtn(40)}  className='break-time'>40s</button>
+                <button onClick={() => timeBtn(50)}  className='break-time'>50s</button>
             </div>
           </div>
           <div>
             <h2>Exercise Details</h2>
             <div className='time'>
-              <p>Exercise Time   {}</p>
+              <p>Exercise Time   {time}</p>
             </div>
             <div className='time'>
-             <p>Break Time   {}</p>
+             <p>Break Time   {ten}</p>
             </div>
           </div>
           <button className='btn-cart'>

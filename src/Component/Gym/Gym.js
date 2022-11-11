@@ -4,11 +4,18 @@ import Exercise from '../Exercise/Exercise';
 import './Gym.css'
 const Gym = () => {
     const [exercises, setExercise] = useState([]) 
+    const [cart, setCart] = useState([])
     useEffect(() =>{
         fetch('fakeData.json')
         .then(res => res.json()
         .then(data => setExercise(data)))
     }, [])
+
+    const addTolist = (time) =>{
+    const newCart = [...cart, time];
+    setCart(newCart);
+    }
+
     return (
         <div className='gym-container'>
          <div className='main-exercise'>
@@ -18,13 +25,14 @@ const Gym = () => {
           {
             exercises.map(exercise => <Exercise
             key = {exercise.id}
-            exercise = {exercise}>
+            exercise = {exercise}
+            addTolist = {addTolist}>
             </Exercise>)
           }
          </div>
          </div>
          <div className='cart'>
-        <Cart></Cart>
+        <Cart cart = {cart}></Cart>
          </div>
         </div>
     );

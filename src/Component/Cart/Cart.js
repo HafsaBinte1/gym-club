@@ -17,6 +17,9 @@ const Cart = (props) => {
     const getValue = localStorage.getItem('break-time')
     setTen(getValue)
   }, [])
+   const complete = () => {
+    alert('Task Complete')
+   }
     return (
         <div className='cart'>
             <div className='profile'>
@@ -59,7 +62,7 @@ const Cart = (props) => {
              <p>Break Time   {ten}</p>
             </div>
           </div>
-          <button className='btn-cart'>
+          <button onClick={complete} className='btn-cart'>
                 <h5 className='btn-text'>Activity Complete</h5>
             </button>
         </div>

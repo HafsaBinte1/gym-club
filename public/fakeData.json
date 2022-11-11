@@ -4,7 +4,7 @@
      "img": "https://gethealthyu.com/wp-content/uploads/2014/08/Basic-Squat_Exercise.jpg",
      "name": "Squat",
       "details":"Regular physical activity is one of the most important things you can do for your health. Being physically active can improve your brain health, help manage weight, reduce the risk of disease, strengthen bones and muscles, and improve your ability to do everyday activities.",
-      "time":20
+      "time":10
     },
     {
      "id":2,
@@ -18,27 +18,27 @@
      "img": "https://thumbs.dreamstime.com/b/young-man-doing-elbow-plank-workout-shows-isolated-white-front-view-62056814.jpg",
      "name": "Plank",
       "details":"Regular physical activity is one of the most important things you can do for your health. Being physically active can improve your brain health, help manage weight, reduce the risk of disease, strengthen bones and muscles, and improve your ability to do everyday activities.",
-      "time":20
+      "time":30
     },
     {
      "id":4,
      "img": "https://thumbs.dreamstime.com/b/jumping-jacks-young-man-doing-sport-exercise-85048332.jpg",
      "name": "Jumping Jack",
       "details":"Regular physical activity is one of the most important things you can do for your health. Being physically active can improve your brain health, help manage weight, reduce the risk of disease, strengthen bones and muscles, and improve your ability to do everyday activities.",
-      "time":20
+      "time":40
     },
     {
      "id":5,
      "img": "https://images-stylist.s3-eu-west-1.amazonaws.com/app/uploads/2020/03/27130207/jump-getty.jpg",
      "name": "Jump",
       "details":"Regular physical activity is one of the most important things you can do for your health. Being physically active can improve your brain health, help manage weight, reduce the risk of disease, strengthen bones and muscles, and improve your ability to do everyday activities.",
-      "time":20
+      "time":50
     },
     {
      "id":6,
      "img": "https://img-aws.ehowcdn.com/877x500/photos.demandstudios.com/getty/article/97/156/78629479_XS.jpg",
      "name": "Bicyle Pose",
       "details":"Regular physical activity is one of the most important things you can do for your health. Being physically active can improve your brain health, help manage weight, reduce the risk of disease, strengthen bones and muscles, and improve your ability to do everyday activities.",
-      "time":20
+      "time":60
     }
 ]

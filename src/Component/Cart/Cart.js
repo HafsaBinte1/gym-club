@@ -35,6 +35,18 @@ const Cart = () => {
                 <button className='break-time'>50s</button>
             </div>
           </div>
+          <div>
+            <h2>Exercise Details</h2>
+            <div className='time'>
+              <p>Exercise Time   {}</p>
+            </div>
+            <div className='time'>
+             <p>Break Time   {}</p>
+            </div>
+          </div>
+          <button className='btn-cart'>
+                <h5 className='btn-text'>Activity Complete</h5>
+            </button>
         </div>
     );
 };

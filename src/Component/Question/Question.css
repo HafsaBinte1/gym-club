@@ -1,0 +1,11 @@
+.question {
+    width: 80%;
+    padding-left: 3%;
+   margin: 100px;
+    border: 1px solid #27AE60;
+   
+}
+
+.last {
+    margin-bottom: 5%;
+}

@@ -1,0 +1,45 @@
+.cart{
+
+    position: sticky;
+    top: 0;
+    padding: 20px 30px;
+}
+.profile{
+    display: flex;
+}
+.profile img{
+  height: 90px;
+  width: 100px;
+  border-radius: 50%;
+}
+.profile-details{
+ font-size: 13px;
+ padding: 2px;
+ margin-left: 5px;
+ margin-top: 3px;
+}
+.physical-structure{
+    margin: 10px;
+    background-color: rgb(228, 214, 214);
+    display: flex;
+    justify-content: space-between;
+    
+}
+.structure{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.break{
+    background-color: rgb(228, 214, 214);
+    height: 80px;
+   
+}
+.break-time{
+    margin-top: 25px;
+    height: 30px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 2px;
+    margin-right: 2px;
+    border: none;
+}

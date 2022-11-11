@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Cart from '../Cart/Cart';
 import Exercise from '../Exercise/Exercise';
 import './Gym.css'
 const Gym = () => {
@@ -10,7 +11,7 @@ const Gym = () => {
     }, [])
     return (
         <div className='gym-container'>
-         <div>
+         <div className='main-exercise'>
           <h1>Gym Club</h1>
           <h4>Select Today's Exercise </h4>
           <div className='exercise'>
@@ -23,7 +24,7 @@ const Gym = () => {
          </div>
          </div>
          <div className='cart'>
-         <h1>This is cart</h1>
+        <Cart></Cart>
          </div>
         </div>
     );

@@ -1,6 +1,9 @@
 .gym-container{
     display: grid;
     grid-template-columns: 4fr 1fr;
+  
+}
+.main-exercise{
     margin: 20px;
 }
 .exercise{
